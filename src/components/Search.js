@@ -14,7 +14,8 @@ export default function Search() {
 
     useEffect(() => {
         setState(search)
-        if(search !== undefined) setDisable('')
+        console.log(search)
+        if(Object.entries(search).length > 0) setDisable('')
     },[search])
    
     useEffect(() => {
