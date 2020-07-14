@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/details/:id">
           <Details/>
         </Route>
-        <Route path="/" exact>
+        <Route path="/TestTask" exact >
           <Search/>
           <Films/>
         </Route>
