@@ -37,7 +37,7 @@ export default function Search() {
         
     }
     myFunction(titleArray,name)
-},[])
+},[name])
     return (
         <div>
         <InputGroup className="mb-3">
