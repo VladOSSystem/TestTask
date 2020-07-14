@@ -15,7 +15,7 @@ export default function Films() {
             dispatch(data(res.data.results))
         }
         asyncFilms()
-    },[])
+    },[dispatch])
     const filmItems = films.map((data) => (
         <li key={data.episode_id}>
             <Link to={`/details/${data.url.split('/')[5]}`}>

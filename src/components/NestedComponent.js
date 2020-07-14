@@ -9,7 +9,7 @@ export default function NestedComponent(props) {
         const asyncData = async () => {
             if (props.nestName) {
             let results = (await axios.all(
-                props.nestName.map(url => axios.get(`${url}`))
+                props.nestName.map(url => axios.get(`${url.replace('http','https')}`))
             ))
             .map(result => result.data.name)
             setNest(results.sort())

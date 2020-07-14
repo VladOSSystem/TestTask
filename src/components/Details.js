@@ -10,7 +10,8 @@ export default function Details() {
             setFilm(res.data)
         }
         asyncFilms()
-    },[])
+    },[detailId])
+    
     return (
         <div>
             {film.title}

@@ -14,7 +14,6 @@ export default function Search() {
 
     useEffect(() => {
         setState(search)
-        console.log(search)
         if(Object.entries(search).length > 0) setDisable('')
     },[search])
    
@@ -38,7 +37,7 @@ export default function Search() {
         
     }
     myFunction(titleArray,name)
-}, [name])
+},[])
     return (
         <div>
         <InputGroup className="mb-3">

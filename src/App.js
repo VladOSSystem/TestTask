@@ -10,7 +10,7 @@ import {
 import Films from './components/Films'
 import Details from './components/Details'
 import Search from './components/Search'
-
+import PageNotFound from './components/404'
 const App = () => {
 
   return (
@@ -23,10 +23,11 @@ const App = () => {
         <Route path="/details/:id">
           <Details/>
         </Route>
-        <Route path="/">
+        <Route path="/" exact>
           <Search/>
           <Films/>
         </Route>
+        <Route component={PageNotFound} />
       </Switch>
       </Col>
       </Row>
